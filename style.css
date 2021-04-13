@@ -1,0 +1,44 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body
+{
+    width: 100%;
+    height: 100%;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgBox 
+{
+    width: 350px;
+    height: 480px;
+    position: relative;
+}
+
+.imgBox img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    object-fit: cover;
+    /* REFLECTION CSS */
+    -webkit-box-reflect: below 20px linear-gradient(transparent, transparent, rgba(0,0,0,0.5));
+    transition: 0.2s ease;
+    opacity: 0.5;
+}
+
+.imgBox img:hover
+{
+    opacity: 1;
+}
